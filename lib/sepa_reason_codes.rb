@@ -3,6 +3,17 @@
 require 'sepa_reason_codes/version'
 require 'yaml'
 
+# Usage:
+#
+# SepaReasonCodes.find('AC01')
+#
+# @returns ReasonCodeStruct{
+#   code: 'AC01',
+#   iso_name: '',
+#   description: '',
+#   probable_status: ''
+# }
+
 module SepaReasonCodes
   class Error < StandardError; end
 
@@ -12,7 +23,7 @@ module SepaReasonCodes
   ReasonCodeStruct =
     Struct.new(:code, :iso_name, :description, :probable_status)
 
-  # @param ~String~ Sepa Reason Code case insensitive
+  # @param ~String~ Sepa Reason Code; Case insensitive
   # Read more at : https://www.hettwer-beratung.de/sepa-spezialwissen/sepa-reason-codes/
 
   # Parses lib/reason_codes.yml, retrieves and
