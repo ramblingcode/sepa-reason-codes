@@ -1,6 +1,9 @@
+[![Gem Version](https://badge.fury.io/rb/sepa_reason_codes.svg)](https://badge.fury.io/rb/sepa_reason_codes)
+[![CircleCI](https://circleci.com/gh/ramblingcode/sepa-reason-codes.svg?style=svg)](https://circleci.com/gh/ramblingcode/sepa-reason-codes)
+
 # SepaReasonCodes
 
-Welcome to SepaReasonCodes! 
+Welcome to SepaReasonCodes!
 
 This is a absolutely minimal gem to work with SEPA Reason Codes.
 
