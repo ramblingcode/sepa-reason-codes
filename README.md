@@ -42,6 +42,14 @@ puts reason_code.probable_status # declined
 
 SepaReasonCodes does not have any dependency or magic. Just check `lib/reason_codes.yml` to see the list of all reason codes.
 
+You can also retrieve all Reason Codes by doing:
+
+```ruby
+SepaReasonCodes.all
+```
+
+which will return a collection of `ReasonCode` structs.
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
