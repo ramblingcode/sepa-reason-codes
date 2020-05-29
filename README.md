@@ -5,7 +5,7 @@
 
 Welcome to SepaReasonCodes!
 
-This is a absolutely minimal gem to work with SEPA Reason Codes.
+This is an absolutely minimal gem to work with SEPA Reason Codes.
 
 `Reason Codes` are used in exception handling in SEPA Direct Debit (SDD). These codes
 indicates reasons for why a transaction failure has happened. You may use this codes if you are parsing bank statements or handling SEPA transactions.
