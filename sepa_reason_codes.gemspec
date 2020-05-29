@@ -8,12 +8,10 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Sahil Gadimbayli']
   spec.email         = ['hi@ramblingcode.dev']
 
-  spec.summary       = 'Minimal plain old ruby gem to work access Sepa Reason Codes.'
+  spec.summary       = 'Minimal, plain old ruby gem to work with Sepa Reason Codes.'
   spec.homepage      = 'https://github.com/ramblingcode/sepa-reason-codes'
   spec.license       = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.3.0')
-
-  # spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com/ramblingcode/sepa-reason-codes'
