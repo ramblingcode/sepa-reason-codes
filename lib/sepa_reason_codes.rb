@@ -36,6 +36,18 @@ module SepaReasonCodes
 
     return unless reason_code
 
+    reason_code_struct(reason_code)
+  end
+
+  # @returns collection [reason_code]
+
+  def self.all
+    ParsedReasonCodes.values.map do |reason_code|
+      reason_code_struct(reason_code)
+    end
+  end
+
+  def self.reason_code_struct(reason_code)
     ReasonCodeStruct.new(
       reason_code.fetch('code'),
       reason_code.fetch('iso_name'),
@@ -43,4 +55,7 @@ module SepaReasonCodes
       reason_code.fetch('probable_status')
     )
   end
+
+  private_constant :ParsedReasonCodes
+  private_class_method :reason_code_struct
 end
