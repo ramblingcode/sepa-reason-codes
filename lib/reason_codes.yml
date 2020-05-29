@@ -1,0 +1,1153 @@
+AC01:
+  code: AC01
+  iso_name: Incorrect Account Number
+  description: Account number is invalid or missing. Format of the account number
+    specified is not correct
+  probable_status: declined
+AC02:
+  code: AC02
+  iso_name: Invalid Debtor Account Number
+  description: Debtor account number invalid or missing
+  probable_status: declined
+AC03:
+  code: AC03
+  iso_name: Invalid Creditor Account Number
+  description: Creditor account number invalid or missing
+  probable_status: declined
+AC04:
+  code: AC04
+  iso_name: Closed Account Number
+  description: Account number specified has been closed on the bank of account's books
+  probable_status: declined
+AC05:
+  code: AC05
+  iso_name: Closed Debtor Account Number
+  description: Debtor account number closed
+  probable_status: declined
+AC06:
+  code: AC06
+  iso_name: Blocked Account
+  description: Account specified is blocked, prohibiting posting of transactions against
+    it.
+  probable_status: declined
+AC07:
+  code: AC07
+  iso_name: Closed Creditor Account Number
+  description: Creditor account number closed
+  probable_status: declined
+AC08:
+  code: AC08
+  iso_name: Invalid Branch Code
+  description: Branch code is invalid or missing
+  probable_status: declined
+AC09:
+  code: AC09
+  iso_name: Invalid Account Currency
+  description: Account currency is invalid or missing
+  probable_status: declined
+AC10:
+  code: AC10
+  iso_name: Invalid Debtor Account Currency
+  description: Debtor account currency is invalid or missing
+  probable_status: declined
+AC11:
+  code: AC11
+  iso_name: Invalid Creditor Account Currency
+  description: Creditor account currency is invalid or missing
+  probable_status: declined
+AC12:
+  code: AC12
+  iso_name: Invalid Account Type
+  description: Account type missing or invalid. Generic usage if cannot specify between
+    group and payment information levels
+  probable_status: declined
+AC13:
+  code: AC13
+  iso_name: Invalid Debtor Account Type
+  description: Debtor account type missing or invalid
+  probable_status: declined
+AC14:
+  code: AC14
+  iso_name: Invalid Creditor Account Type
+  description: Creditor account type missing or invalid
+  probable_status: declined
+AGNT:
+  code: AGNT
+  iso_name: Incorrect Agent
+  description: Agent in the payment workflow is incorrect
+  probable_status: error
+AG01:
+  code: AG01
+  iso_name: Transaction Forbidden
+  description: Transaction forbidden on this type of account (formerly No Agreement)
+  probable_status: declined
+AG02:
+  code: AG02
+  iso_name: Invalid Bank Operation Code
+  description: Bank Operation code specified in the message is not valid for receiver
+  probable_status: declined
+AG03:
+  code: AG03
+  iso_name: Transaction Not Supported
+  description: Transaction type not supported/authorized on this account
+  probable_status: declined
+AG04:
+  code: AG04
+  iso_name: Invalid Agent Country
+  description: Agent country code is missing or invalid. Generic usage if cannot specify
+    between group and payment information levels.
+  probable_status: declined
+AG05:
+  code: AG05
+  iso_name: Invalid Debtor Agent Country
+  description: Debtor agent country code is missing or invalid
+  probable_status: declined
+AG06:
+  code: AG06
+  iso_name: Invalid Creditor Agent Country
+  description: Creditor agent country code is missing or invalid
+  probable_status: declined
+AG07:
+  code: AG07
+  iso_name: Unsuccessful Direct Debit
+  description: Debtor account cannot be debited for a generic reason. Code value may
+    be used in general purposes and as a replacement for AM04 if debtor bank does
+    not reveal its customer's insufficient funds for privacy reasons
+  probable_status: declined
+AG08:
+  code: AG08
+  iso_name: Invalid Access Rights
+  description: Transaction failed due to invalid or missing user or access right
+  probable_status: declined
+AM01:
+  code: AM01
+  iso_name: Zero Amount
+  description: Specified message amount is equal to zero
+  probable_status: declined
+AM02:
+  code: AM02
+  iso_name: Not Allowed Amount
+  description: Specific transaction/message amount is greater than allowed maximum
+  probable_status: declined
+AM03:
+  code: AM03
+  iso_name: Not Allowed Currency
+  description: Specified message amount is a non processable currency outside of existing
+    agreement
+  probable_status: declined
+AM04:
+  code: AM04
+  iso_name: Insufficient Funds
+  description: Amount of funds available to cover specified message amount is insufficient.
+  probable_status: declined
+AM05:
+  code: AM05
+  iso_name: Duplication
+  description: Duplication
+  probable_status: declined
+AM06:
+  code: AM06
+  iso_name: Too Low Amount
+  description: Specified transaction amount is less than agreed minimum.
+  probable_status: declined
+AM07:
+  code: AM07
+  iso_name: Blocked Amount
+  description: Amount of funds available to cover specified message amount is insufficient.
+  probable_status: declined
+AM09:
+  code: AM09
+  iso_name: Wrong Amount
+  description: Amount received is not the amount agreed or expected
+  probable_status: declined
+AM10:
+  code: AM10
+  iso_name: Invalid Control Sum
+  description: Sum of instructed amounts does not equal the control sum.
+  probable_status: declined
+AM11:
+  code: AM11
+  iso_name: Invalid Transaction Currency
+  description: Transaction currency is invalid or missing
+  probable_status: declined
+AM12:
+  code: AM12
+  iso_name: Invalid Amount
+  description: Amount is invalid or missing
+  probable_status: declined
+AM13:
+  code: AM13
+  iso_name: Amount Exceeds Clearing System Limit
+  description: Transaction amount exceeds limits set by clearing system
+  probable_status: declined
+AM14:
+  code: AM14
+  iso_name: Amount Exceeds Agreed Limit
+  description: Transaction amount exceeds limits agreed between bank and client
+  probable_status: declined
+AM15:
+  code: AM15
+  iso_name: Amount Below Clearing System Minimum
+  description: Transaction amount below minimum set by clearing system
+  probable_status: declined
+AM16:
+  code: AM16
+  iso_name: Invalid Group Control Sum
+  description: Control Sum at the Group level is invalid
+  probable_status: declined
+AM17:
+  code: AM17
+  iso_name: Invalid Payment Info Control Sum
+  description: Control Sum at the Payment Information level is invalid
+  probable_status: declined
+AM18:
+  code: AM18
+  iso_name: Invalid Number Of Transactions
+  description: Number of transactions is invalid or missing. Generic usage if cannot
+    specify between group and payment information levels.
+  probable_status: declined
+AM19:
+  code: AM19
+  iso_name: Invalid Group Number of Transactions
+  description: Number of transactions at the Group level is invalid or missing
+  probable_status: declined
+AM20:
+  code: AM20
+  iso_name: Invalid Payment Info Number Of Transactions
+  description: Number of transactions at the Payment Information level is invalid
+  probable_status: declined
+AM21:
+  code: AM21
+  iso_name: Limit Exceeded
+  description: Transaction amount exceeds limits agreed between bank and client.
+  probable_status: declined
+ARDT:
+  code: ARDT
+  iso_name: "-"
+  description: Transaction has already been returned
+  probable_status: declined
+BE01:
+  code: BE01
+  iso_name: Inconsistent With End Customer
+  description: Identification of end customer is not consistent with associated account
+    number (formerly Creditor Consistency).
+  probable_status: declined
+BE04:
+  code: BE04
+  iso_name: Missing Creditor Address
+  description: Specification of creditor's address, which is required for payment,
+    is missing/not correct (formerly Incorrect Creditor Address)
+  probable_status: declined
+BE05:
+  code: BE05
+  iso_name: Unrecognized Initiating Party
+  description: Party who initiated the message is not recognized by the end customer
+    Identifier of the Creditor incorrect
+  probable_status: declined
+BE06:
+  code: BE06
+  iso_name: Unknown End Customer
+  description: End customer specified is not known at associated Sort/National Bank
+    Code or does no longer exist in the books
+  probable_status: declined
+BE07:
+  code: BE07
+  iso_name: Missing Debtor Address
+  description: Specification of debtor's address, which is required for payment, is
+    missing/not correct.
+  probable_status: declined
+BE08:
+  code: BE08
+  iso_name: Missing Debtor Name
+  description: Debtor name is missing
+  probable_status: declined
+BE09:
+  code: BE09
+  iso_name: Invalid Country
+  description: Country code is missing or Invalid. Generic usage if cannot specifically
+    identify debtor or creditor
+  probable_status: declined
+BE10:
+  code: BE10
+  iso_name: Invalid Debtor Country
+  description: Debtor country code is missing or invalid
+  probable_status: declined
+BE11:
+  code: BE11
+  iso_name: Invalid Creditor Country
+  description: Creditor country code is missing or invalid
+  probable_status: declined
+BE12:
+  code: BE12
+  iso_name: Invalid Country Of Residence
+  description: Country code of residence is missing or Invalid. Generic usage if cannot
+    specifically identify debtor or creditor
+  probable_status: declined
+BE13:
+  code: BE13
+  iso_name: Invalid Debtor Country Of Residence
+  description: Country code of debtor's residence is missing or Invalid
+  probable_status: declined
+BE14:
+  code: BE14
+  iso_name: Invalid Creditor Country Of Residence
+  description: Country code of creditor's residence is missing or Invalid
+  probable_status: declined
+BE15:
+  code: BE15
+  iso_name: Invalid Identification Code
+  description: Identification code missing or invalid. Generic usage if cannot specifically
+    identify debtor or creditor.
+  probable_status: declined
+BE16:
+  code: BE16
+  iso_name: Invalid Debtor Identification Code
+  description: Debtor or Ultimate Debtor identification code missing or invalid
+  probable_status: declined
+BE17:
+  code: BE17
+  iso_name: Invalid Creditor Identification Code
+  description: Creditor or Ultimate Creditor identification code missing or invalid
+  probable_status: declined
+BE18:
+  code: BE18
+  iso_name: Invalid Contact Details
+  description: Contact details missing or invalid
+  probable_status: declined
+BE19:
+  code: BE19
+  iso_name: Invalid Charge Bearer Code
+  description: Charge bearer code for transaction type is invalid
+  probable_status: declined
+BE20:
+  code: BE20
+  iso_name: Invalid Name Length
+  description: Name length exceeds local rules for payment type.
+  probable_status: declined
+BE21:
+  code: BE21
+  iso_name: Missing Name
+  description: Name missing or invalid.  Generic usage if cannot specifically identify
+    debtor or creditor.
+  probable_status: declined
+BE22:
+  code: BE22
+  iso_name: Missing Creditor Name
+  description: Creditor name is missing
+  probable_status: declined
+CNOR:
+  code: CNOR
+  iso_name: Creditor bank is not registered
+  description: Creditor bank is not registered under this BIC in the CSM
+  probable_status: declined
+CURR:
+  code: CURR
+  iso_name: Incorrect Currency
+  description: Currency of the payment is incorrect
+  probable_status: declined
+CUST:
+  code: CUST
+  iso_name: Requested By Customer
+  description: Cancellation requested by the Debtor
+  probable_status: chargeback
+CUTA:
+  code: CUTA
+  iso_name: Cancel Upon Unable To Apply
+  description: Recall on request for an investigation
+  probable_status: chargeback
+DS01:
+  code: DS01
+  iso_name: Electronic Signatures Correct
+  description: The electronic signature(s) is/are correct
+  probable_status: declined
+DS02:
+  code: DS02
+  iso_name: Order Cancelled
+  description: An authorized user has cancelled the order
+  probable_status: declined
+DS03:
+  code: DS03
+  iso_name: Order Not Cancelled
+  description: The user’s attempt to cancel the order was not successful
+  probable_status: declined
+DS04:
+  code: DS04
+  iso_name: Order Rejected
+  description: The order was rejected by the bank side (for reasons concerning content)
+  probable_status: declined
+DS05:
+  code: DS05
+  iso_name: Order Forwarded For Post processing
+  description: The order was correct and could be forwarded for post processing
+  probable_status: declined
+DS06:
+  code: DS06
+  iso_name: Transfer Order
+  description: The order was transferred to VEU
+  probable_status: declined
+DS07:
+  code: DS07
+  iso_name: Processing OK
+  description: All actions concerning the order could be done by the EBICS bank server
+  probable_status: declined
+DS08:
+  code: DS08
+  iso_name: Decompression ERROR
+  description: The decompression of the file was not successful
+  probable_status: declined
+DS09:
+  code: DS09
+  iso_name: Decryption ERROR
+  description: The decryption of the file was not successful
+  probable_status: declined
+DS10:
+  code: DS10
+  iso_name: Signer 1 Certificate Revoked
+  description: The certificate is revoked for the first signer.
+  probable_status: declined
+DS11:
+  code: DS11
+  iso_name: Signer 1 Certificate Not Valid
+  description: The certificate is not valid (revoked or not active) for the first
+    signer.
+  probable_status: declined
+DS12:
+  code: DS12
+  iso_name: Incorrect Signer 1 Certificate
+  description: The certificate is not present for the first signer.
+  probable_status: declined
+DS13:
+  code: DS13
+  iso_name: Signer Certification Authority Signer 1 Not Valid
+  description: The authority of signer certification sending the certificate is unknown
+    for the first signer.
+  probable_status: declined
+DS14:
+  code: DS14
+  iso_name: User Does Not Exist
+  description: The user is unknown on the server
+  probable_status: declined
+DS15:
+  code: DS15
+  iso_name: Identical Signature Found
+  description: The same signature has already been sent to the bank
+  probable_status: declined
+DS16:
+  code: DS16
+  iso_name: Public Key Version Incorrect
+  description: The public key version is not correct. This code is returned when a
+    customer sends signature files to the financial institution after conversion from
+    an older program version (old ES format) to a new program version (new ES format)
+    without having carried out initialization with regard to a public key change.
+  probable_status: declined
+DS17:
+  code: DS17
+  iso_name: Different Order Data In Signatures
+  description: Order data and signatures don’t match
+  probable_status: declined
+DS18:
+  code: DS18
+  iso_name: Repeat Order
+  description: File cannot be tested; the complete order has to be repeated. This
+    code is returned in the event of a malfunction during the signature check, e.g.
+    not enough storage space.
+  probable_status: declined
+DS19:
+  code: DS19
+  iso_name: Electronic Signature Rights Insufficient
+  description: The user’s rights (concerning his signature) are insufficient to execute
+    the order
+  probable_status: declined
+DS20:
+  code: DS20
+  iso_name: Signer 2 Certificate Revoked
+  description: The certificate is revoked for the second signer
+  probable_status: declined
+DS21:
+  code: DS21
+  iso_name: Signer 2 Certificate Not Valid
+  description: The certificate is not valid (revoked or not active) for the second
+    signer
+  probable_status: declined
+DS22:
+  code: DS22
+  iso_name: Incorrect Signer 2 Certificate
+  description: The certificate is not present for the second signer
+  probable_status: declined
+DS23:
+  code: DS23
+  iso_name: Signer Certification Authority Signer 2 Not Valid
+  description: The authority of signer certification sending the certificate is unknown
+    for the second signer
+  probable_status: declined
+DS24:
+  code: DS24
+  iso_name: Waiting Time Expired
+  description: Waiting time expired due to incomplete order
+  probable_status: declined
+DS25:
+  code: DS25
+  iso_name: Order File Deleted
+  description: The order file was deleted by the bank server (for multiple reasons)
+  probable_status: declined
+DS26:
+  code: DS26
+  iso_name: User Signed Multiple Times
+  description: The same user has signed multiple times
+  probable_status: declined
+DS27:
+  code: DS27
+  iso_name: User Not Yet Activated
+  description: The user is not yet activated (technically)
+  probable_status: declined
+DS0A:
+  code: DS0A
+  iso_name: Data Sign Requested
+  description: Data Signature is required.
+  probable_status: declined
+DS0B:
+  code: DS0B
+  iso_name: Unknown Data Sign Format
+  description: Data signature for the format is not available or invalid.
+  probable_status: declined
+DS0C:
+  code: DS0C
+  iso_name: Signer Certificate Revoked
+  description: The signer certificate is revoked.
+  probable_status: declined
+DS0D:
+  code: DS0D
+  iso_name: Signer Certificate Not Valid
+  description: The signer certificate is not valid (revoked or not active).
+  probable_status: declined
+DS0E:
+  code: DS0E
+  iso_name: Incorrect Signer Certificate
+  description: The signer certificate is not present.
+  probable_status: declined
+DS0F:
+  code: DS0F
+  iso_name: Signer Certification Authority Signer Not Valid
+  description: The authority of the signer certification sending the certificate is
+    unknown.
+  probable_status: declined
+DS0G:
+  code: DS0G
+  iso_name: Not Allowed Payment
+  description: Signer is not allowed to sign this operation type.
+  probable_status: declined
+DS0H:
+  code: DS0H
+  iso_name: Not Allowed Account
+  description: Signer is not allowed to sign for this account.
+  probable_status: declined
+DS0K:
+  code: DS0K
+  iso_name: Not Allowed Number Of Transaction
+  description: The number of transaction is over the number allowed for this signer.
+  probable_status: declined
+DNOR:
+  code: DNOR
+  iso_name: Debtor bank is not registered
+  description: Debtor bank is not registered under this BIC in the CSM
+  probable_status: declined
+DT01:
+  code: DT01
+  iso_name: Invalid Date Range
+  description: The date is not within the time frame foreseen by other CSMs
+    or not in the time corridor of the SEPA clearer.
+  probable_status: error
+DT02:
+  code: DT02
+  iso_name: Invalid Creation Date
+  description: Invalid creation date and time in Group Header (eg, historic date)
+  probable_status: error
+DT03:
+  code: DT03
+  iso_name: Invalid Non Processing Date
+  description: Invalid non-bank processing date (eg, weekend or local public holiday)
+  probable_status: error
+DT04:
+  code: DT04
+  iso_name: Future Date Not Supported
+  description: Future date not supported
+  probable_status: error
+DT05:
+  code: DT05
+  iso_name: Invalid Cut Off Date
+  description: Associated message, payment information block or transaction was received
+    after agreed processing cutoff date, i.e., date in the past.
+  probable_status: error
+DT06:
+  code: DT06
+  iso_name: Execution Date Changed
+  description: Execution Date has been modified in order for transaction to be processed
+  probable_status: declined
+DU01:
+  code: DU01
+  iso_name: Duplicate Message ID
+  description: Message Identification is not unique.
+  probable_status: declined
+DU02:
+  code: DU02
+  iso_name: Duplicate Payment Information ID
+  description: Payment Information Block is not unique.
+  probable_status: declined
+DU03:
+  code: DU03
+  iso_name: Duplicate Transaction
+  description: Transaction is not unique.
+  probable_status: declined
+DU04:
+  code: DU04
+  iso_name: Duplicate End To End ID
+  description: End To End ID is not unique.
+  probable_status: declined
+DU05:
+  code: DU05
+  iso_name: Duplicate Instruction ID
+  description: Instruction ID is not unique
+  probable_status: declined
+DUPL:
+  code: DUPL
+  iso_name: Duplicate Payment
+  description: Payment is a duplicate of another payment
+  probable_status: chargeback
+ED01:
+  code: ED01
+  iso_name: Correspondent Bank Not Possible
+  description: Correspondent bank not possible.
+  probable_status: declined
+ED03:
+  code: ED03
+  iso_name: Balance Info Request
+  description: Balance of payments complementary info is requested
+  probable_status: declined
+ED05:
+  code: ED05
+  iso_name: Settlement Failed
+  description: Settlement of the transaction has failed.
+  probable_status: declined
+EMVL:
+  code: EMVL
+  iso_name: EMV Liability Shift
+  description: The card payment is fraudulent and was not processed with EMV technology
+    for an EMV card.
+  probable_status: declined
+FOCR:
+  code: FOCR
+  iso_name: Following Cancellation Request
+  description: Return following a cancellation request
+  probable_status: declined
+FF01:
+  code: FF01
+  iso_name: Syntax ERROR
+  description: File Format incomplete or invalid Transaction Code incorrect (SDD)
+  probable_status: error
+FF02:
+  code: FF02
+  iso_name: Syntax ERROR
+  description: Syntax ERROR reason is provided as narrative information in the additional
+    reason information.
+  probable_status: error
+FF03:
+  code: FF03
+  iso_name: Invalid Payment Type Information
+  description: Payment Type Information is missing or invalid. Generic usage if cannot
+    specify Service Level or Local Instrument code
+  probable_status: declined
+FF04:
+  code: FF04
+  iso_name: Invalid Service Level Code
+  description: Service Level code is missing or invalid
+  probable_status: error
+FF05:
+  code: FF05
+  iso_name: Invalid Local Instrument Code
+  description: Local Instrument code is missing or invalid Direct Debit Type incorrect
+  probable_status: error
+FF06:
+  code: FF06
+  iso_name: Invalid CATEGORY Purpose Code
+  description: CATEGORY Purpose code is missing or invalid
+  probable_status: error
+FF07:
+  code: FF07
+  iso_name: Invalid Purpose
+  description: Purpose is missing or invalid
+  probable_status: error
+FF08:
+  code: FF08
+  iso_name: Invalid End To End Id
+  description: End to End Id missing or invalid
+  probable_status: error
+FF09:
+  code: FF09
+  iso_name: Invalid Cheque Number
+  description: Cheque number missing or invalid
+  probable_status: error
+FF10:
+  code: FF10
+  iso_name: Bank System Processing ERROR
+  description: File or transaction cannot be processed due to technical issues at
+    the bank side
+  probable_status: error
+FRAD:
+  code: FRAD
+  iso_name: "-"
+  description: Payment is made with fraudulent intent.
+  probable_status: declined
+ID01:
+  code: ID01
+  iso_name: Correspond-ing Original File Still Not Sent
+  description: Signature file was sent to the bank but the corresponding original
+    file has not been sent yet.
+  probable_status: declined
+LEGL:
+  code: LEGL
+  iso_name: Legal Decision
+  description: Legal reason
+  probable_status: declined
+MD01:
+  code: MD01
+  iso_name: No Mandate
+  description: No Mandate
+  probable_status: declined
+MD02:
+  code: MD02
+  iso_name: Missing Mandatory Information In Mandate
+  description: Mandate related information data required by the scheme is missing.
+  probable_status: declined
+MD03:
+  code: MD03
+  iso_name: Invalid File Format For Other Reason Than Grouping Indicator
+  description: File format invalid (submitter must adapt the structure of the format and resubmit)
+  probable_status: declined
+MD05:
+  code: MD05
+  iso_name: Collection Not Due
+  description: Creditor or creditor's agent should not have collected the direct debit
+  probable_status: declined
+MD06:
+  code: MD06
+  iso_name: Refund Requested By End Customer
+  description: Return of funds requested by end customer
+  probable_status: chargeback
+MD07:
+  code: MD07
+  iso_name: End Customer Deceased
+  description: End customer is deceased.
+  probable_status: declined
+MD08:
+  code: MD08
+  iso_name: No Mandate Service By Agent
+  description: Receiving agent does not offer specified Mandate services
+  probable_status: declined
+MD09:
+  code: MD09
+  iso_name: No Mandate Service On Customer
+  description: Account is not open to specified Mandates services
+  probable_status: declined
+MD10:
+  code: MD10
+  iso_name: No Mandate Service For Specified
+  description: Account is not open to specified Mandates services for this particular
+    creditor
+  probable_status: declined
+MD11:
+  code: MD11
+  iso_name: Unrecognised Agent
+  description: Agent to whom the message needs to be forwarded cannot be located
+  probable_status: declined
+MD12:
+  code: MD12
+  iso_name: Not Unique Mandate Reference
+  description: Mandate identification is not unique to the creditor
+  probable_status: declined
+MD13:
+  code: MD13
+  iso_name: Incorrect Customer Authentication
+  description: There is a problem with the customer authentication
+  probable_status: declined
+MD14:
+  code: MD14
+  iso_name: Incorrect Agent
+  description: Agent in the payment workflow is incorrect
+  probable_status: declined
+MD15:
+  code: MD15
+  iso_name: Incorrect Currency
+  description: Currency of the transaction is incorrect
+  probable_status: declined
+MD16:
+  code: MD16
+  iso_name: Requested By Customer
+  description: Cancellation/amendment requested by the debtor
+  probable_status: declined
+MD17:
+  code: MD17
+  iso_name: Requested By Initiating Party
+  description: Cancellation/amendment requested by the creditor
+  probable_status: declined
+MS02:
+  code: MS02
+  iso_name: Not Specified Reason, Customer Generated
+  description: Reason has not been specified by end customer
+  probable_status: declined
+MS03:
+  code: MS03
+  iso_name: Not Specified Reason, Agent Generated
+  description: Reason has not been specified by agent.
+  probable_status: declined
+NARR:
+  code: NARR
+  iso_name: Narrative
+  description: Reason is provided as narrative information in the additional reason
+    information.
+  probable_status: declined
+NOAS:
+  code: NOAS
+  iso_name: No Answer From Customer
+  description: No response from beneficiary
+  probable_status: declined
+NOOR:
+  code: NOOR
+  iso_name: No Original Transaction Received
+  description: Original credit transfer was never received
+  probable_status: declined
+PART:
+  code: PART
+  iso_name: "-"
+  description: Partial rejection of a bulk
+  probable_status: declined
+PINL:
+  code: PINL
+  iso_name: PIN Liability Shift
+  description: The card payment is fraudulent (lost and stolen fraud) and was processed
+    as EMV transaction without PIN verification
+  probable_status: declined
+PY01:
+  code: PY01
+  iso_name: "-"
+  description: The transaction cannot be processed because the beneficiary and/or the instructing bank 
+    is not registered with the EBA as a direct or indirect participant. (Initiator SEPA Clearer).
+  probable_status: declined
+RC01:
+  code: RC01
+  iso_name: Bank Identifier Incorrect
+  description: Bank Identifier code specified in the message has an incorrect format
+    (formerly Incorrect Format For Routing Code)
+  probable_status: declined
+RC02:
+  code: RC02
+  iso_name: Invalid Bank Identifier
+  description: Bank identifier is invalid or missing. Generic usage if cannot specify
+    between debit or credit account
+  probable_status: declined
+RC03:
+  code: RC03
+  iso_name: Invalid Debtor Bank Identifier
+  description: Debtor bank identifier is invalid or missing
+  probable_status: declined
+RC04:
+  code: RC04
+  iso_name: Invalid Creditor Bank Identifier
+  description: Creditor bank identifier is invalid or missing
+  probable_status: declined
+RC05:
+  code: RC05
+  iso_name: Invalid BIC Identifier
+  description: BIC identifier is invalid or missing. Generic usage if cannot specify
+    between debit and credit account.
+  probable_status: declined
+RC06:
+  code: RC06
+  iso_name: Invalid Debtor BIC Identifier
+  description: Debtor BIC identifier is invalid or missing
+  probable_status: declined
+RC07:
+  code: RC07
+  iso_name: Invalid Creditor BIC Identifier
+  description: Creditor BIC identifier is invalid or missing
+  probable_status: declined
+RC08:
+  code: RC08
+  iso_name: Invalid Clearing System Member Identifier
+  description: Clearing System Memberidentifier is invalid or missing. Generic usage
+    if cannot specify between debit or credit account
+  probable_status: declined
+RC09:
+  code: RC09
+  iso_name: Invalid Debtor Clearing System Member Identifier
+  description: Debtor Clearing System Member identifier is invalid or missing
+  probable_status: declined
+RC10:
+  code: RC10
+  iso_name: Invalid Creditor Clearing System Member Identifier
+  description: Creditor Clearing System Member identifier is invalid or missing
+  probable_status: declined
+RC11:
+  code: RC11
+  iso_name: Invalid Intermediary Agent
+  description: Intermediary Agent is invalid or missing
+  probable_status: declined
+RC12:
+  code: RC12
+  iso_name: Missing Creditor Scheme Id
+  description: Creditor Scheme Id is invalid or  missing
+  probable_status: declined
+RF01:
+  code: RF01
+  iso_name: Not Unique Transaction Reference
+  description: Transaction reference is not unique within the message.
+  probable_status: declined
+RJCT:
+  code: RJCT
+  iso_name: "-"
+  description: Complete rejection of a bulk
+  probable_status: declined
+RR01:
+  code: RR01
+  iso_name: Missing Debtor Account Or Identification
+  description: Specification of the debtor’s account or unique identification needed
+    for reasons of regulatory requirements is insufficient or missing
+  probable_status: declined
+RR02:
+  code: RR02
+  iso_name: Missing Debtor Name Or Address
+  description: Specification of the debtor’s name and/or address needed for regulatory
+    requirements is insufficient or missing.
+  probable_status: declined
+RR03:
+  code: RR03
+  iso_name: Missing Creditor Name Or Address
+  description: Specification of the creditor’s name and/or address needed for regulatory
+    requirements is insufficient or missing.
+  probable_status: declined
+RR04:
+  code: RR04
+  iso_name: RegulatoryReason
+  description: Regulatory Reason
+  probable_status: declined
+RR05:
+  code: RR05
+  iso_name: Regulatory Information Invalid
+  description: Regulatory or Central Bank Reporting information missing, incomplete
+    or invalid.
+  probable_status: declined
+RR06:
+  code: RR06
+  iso_name: Tax Information Invalid
+  description: Tax information missing, incomplete or invalid.
+  probable_status: declined
+RR07:
+  code: RR07
+  iso_name: Remittance Information Invalid
+  description: Remittance information structure does not comply with rules for payment
+    type.
+  probable_status: declined
+RR08:
+  code: RR08
+  iso_name: Remittance Information Truncated
+  description: Remittance information truncated to comply with rules for payment type.
+  probable_status: declined
+RR09:
+  code: RR09
+  iso_name: Invalid Structured Creditor Reference
+  description: Structured creditor reference invalid or missing.
+  probable_status: declined
+RR10:
+  code: RR10
+  iso_name: Invalid Character Set
+  description: Character set supplied not valid for the country and payment type.
+  probable_status: declined
+RR11:
+  code: RR11
+  iso_name: Invalid Debtor Agent Service ID
+  description: Invalid or missing identification of a bank proprietary service.
+  probable_status: declined
+RR12:
+  code: RR12
+  iso_name: Invalid Party ID
+  description: Invalid or missing identification required within a particular country
+    or payment type.
+  probable_status: declined
+SL01:
+  code: SL01
+  iso_name: Due To Specific Services Offered By Debtor Agent
+  description: Due to specific service offered by the Debtor Agent
+  probable_status: declined
+SL02:
+  code: SL02
+  iso_name: Specific Service offered by Creditor Agent
+  description: Due to specific service offered by the Creditor Agent
+  probable_status: declined
+SVNR:
+  code: SVNR
+  iso_name: Service Not Rendered
+  description: The card payment is returned since a cash amount rendered was not correct
+    or goods or a service was not rendered to the customer, e.g. in an ecommerce situation.
+  probable_status: declined
+TA01:
+  code: TA01
+  iso_name: Transmission Aborted
+  description: The transmission of the file was not successful – it had to be aborted
+    (for technical reasons)
+  probable_status: declined
+TD01:
+  code: TD01
+  iso_name: No Data Available
+  description: There is no data available (for download)
+  probable_status: declined
+TD02:
+  code: TD02
+  iso_name: File Non Readable
+  description: The file cannot be read (e.g. unknown format)
+  probable_status: declined
+TD03:
+  code: TD03
+  iso_name: Incorrect File Structure
+  description: The file format is incomplete or invalid
+  probable_status: declined
+TECH:
+  code: TECH
+  iso_name: "-"
+  description: Technical problems resulting in erroneous credit transfer
+  probable_status: declined
+TM01:
+  code: TM01
+  iso_name: 'Invalid Cut Off Time Formerly: Cut Off Time'
+  description: Associated message was received after agreed processing cutoff time.
+  probable_status: declined
+TS01:
+  code: TS01
+  iso_name: Transmission Successful
+  description: The (technical) transmission of the file was successful.
+  probable_status: declined
+TS04:
+  code: TS04
+  iso_name: Transfer To Sign By Hand
+  description: The order was transferred to pass by accompanying note signed by hand.
+  probable_status: declined
+UPAY:
+  code: UPAY
+  iso_name: Undue Payment
+  description: Payment is not authorized
+  probable_status: chargeback
+XD19:
+  code: XD19
+  iso_name: "-"
+  description: IBAN check according to ISO 13616 failed (e.g. (DebtorAccount or CreditorAccount are not correct.)
+  probable_status: declined
+XD75:
+  code: XD75
+  iso_name: 'Invalid Cut Off Time Formerly: Cut Off Time'
+  description: 6
+  probable_status: error
+XT13:
+  code: XT13
+  iso_name: "-"
+  description: Transaction contains at least one unsupported field. 
+    At least one mandatory field is not included in the transaction.
+  probable_status: declined
+XT27:
+  code: XT27
+  iso_name: "-"
+  description: Transaction contains at least one element with a BIC that is not
+    is available in the SCL directory.
+  probable_status: declined
+XT33:
+  code: XT33
+  iso_name: "-"
+  description: Content of at least one XML element does not have the required format.
+    The faulty XML field is marked with the error code (Initiator SEPA Clearer).
+  probable_status: declined
+XT43:
+  code: XT43
+  iso_name: "-"
+  description: Type of direct debit (CORE7B2B) differs from the assignment of the <Srvcld> 
+    in the file header (Initiator SEPA Clearer).
+  probable_status: declined
+XT53:
+  code: XT53
+  iso_name: "-"
+  description: Check of the Creditor Indentifier <CdtrSchmeld><Id> with regard to structure/check digit
+    failed (initiator SEPA Clearer).
+  probable_status: declined
+XT73:
+  code: XT73
+  iso_name: "-"
+  description: Both characters for the country code are not valid ISO or SEPA
+    Country code (Initiator SEPA Clearer)
+  probable_status: declined
+XT74:
+  code: XT74
+  iso_name: "-"
+  description: Faulty underlying original transaction (initiator other
+    CSM). Further examination required
+  probable_status: declined
+XT75:
+  code: XT75
+  iso_name: "-"
+  description: Incorrect status of the underlying original transaction from
+    the R message (initiator other CSM). No further actions necessary.
+  probable_status: declined
+XT76:
+  code: XT76
+  iso_name: "-"
+  description: Invalid error code in Return/Refund (Initiator SEPA Clearer)
+  probable_status: declined
+XT77:
+  code: XT77
+  iso_name: "-"
+  description: The originally commissioned amount <OrgnIIntrBkSttlmAmt> was paid by
+    other CSM not found or does not match the amount of the original transaction about
+  probable_status: declined
+XT78:
+  code: XT78
+  iso_name: "-"
+  description: 'pasc.004.001.01: The amount in <OrgnlIntrBkSttlmAmt> + <CompstnAmt>
+    + <ChrgsInf><Amt> must result in the amount in <RtrdIntrBkSttlmAmt> if <CompstnAmt>
+    and/or <ChrgsInf><Amt> available (initiator SEPA Clearer).'
+  probable_status: declined
+XT79:
+  code: XT79
+  iso_name: "-"
+  description: The <DbtrAgt> is not allowed to receive direct debits. An
+    indirect participants must be allowed to accept direct debits from the clearing system
+    (initiator other CSM).
+  probable_status: declined
+XT80:
+  code: XT80
+  iso_name: "-"
+  description: The <CdtrAgt> is not allowed to send direct debits. An indirect
+    Participant must be allowed to send direct debits to the clearing system
+    (initiator other CSM).
+  probable_status: declined
+XT81:
+  code: XT81
+  iso_name: "-"
+  description: SCT XML field not permitted in CT service
+  probable_status: declined
+XT85:
+  code: XT85
+  iso_name: No Settlement Cycle available
+  description: SCT
+  probable_status: declined
+XT87:
+  code: XT87
+  iso_name: "-"
+  description: SDD R-Msg not following same DP route/ sending DP not identical to
+    Instructing / Instructed Agent of the original Transaction
+  probable_status: declined
+XT90:
+  code: XT90
+  iso_name: Invalid use of a Technical BIC
+  description: SCT
+  probable_status: declined
+XT99:
+  code: XT99
+  iso_name: "-"
+  description: Rejection of the bank transfer or direct debit or card collection from
+    SEPA Clearer for other reasons.
+  probable_status: declined
