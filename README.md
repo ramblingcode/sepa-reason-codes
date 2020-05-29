@@ -5,14 +5,17 @@
 
 Welcome to SepaReasonCodes!
 
-This is an absolutely minimal gem to work with SEPA Reason Codes.
+It is a minimal Ruby gem to work with SEPA Reason Codes.
 
-`Reason Codes` are used in exception handling in SEPA Direct Debit (SDD). These codes
-indicates reasons for why a transaction failure has happened. You may use this codes if you are parsing bank statements or handling SEPA transactions.
+Reason Codes are used in exception handling in SEPA Direct Debit (SDD). These codes
+indicate reasons for why a transaction failure has happened. 
 
-We have created a Ruby package where you may easily access and work with them.
+You may use these codes if you are parsing bank statements or handling SEPA transactions through an API
+of some kind of 3rd Party Payment Gateway.
 
-If you want to know more about them, read more [here](https://www.europeanpaymentscouncil.eu/sites/default/files/kb/file/2018-09/EPC173-14%20v4.1%20Guidance%20on%20Reason%20Codes%20for%20SDD%20R-transactions.pdf)
+We have created SepaReasonCodes so you may easily access and work with them.
+
+If you want to know more about Reason Codes, read [here](https://www.europeanpaymentscouncil.eu/sites/default/files/kb/file/2018-09/EPC173-14%20v4.1%20Guidance%20on%20Reason%20Codes%20for%20SDD%20R-transactions.pdf)
 
 ## Installation
 
