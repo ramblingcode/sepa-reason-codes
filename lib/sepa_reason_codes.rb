@@ -1,61 +1,61 @@
 # frozen_string_literal: true
 
 require 'sepa_reason_codes/version'
-require 'yaml'
+require 'sepa_reason_codes/code'
 
-# Usage:
-#
-# SepaReasonCodes.find('AC01')
-#
-# @returns ReasonCodeStruct{
-#   code: 'AC01',
-#   iso_name: '',
-#   description: '',
-#   probable_status: ''
-# }
+require 'yaml'
 
 module SepaReasonCodes
   class Error < StandardError; end
 
-  ParsedReasonCodes =
+  PARSED_REASON_CODES =
     YAML.load_file(File.join(__dir__, ['reason_codes.yml'])).freeze
-
-  ReasonCodeStruct =
-    Struct.new(:code, :iso_name, :description, :probable_status)
 
   # @param ~String~ Sepa Reason Code; Case insensitive
   # Read more at : https://www.hettwer-beratung.de/sepa-spezialwissen/sepa-reason-codes/
 
   # Parses lib/reason_codes.yml, retrieves and
-  # returns ReasonCode Struct with accessors
+  # returns SepaReasonCodes::Code with accessors
   # code, iso_name, description, probable_status
 
+  # Usage:
+  #
+  # SepaReasonCodes.find('AC01')
+  #
+  # @returns SepaReasonCodes::Code{
+  #   code: 'AC01',
+  #   iso_name: '...',
+  #   description: '...',
+  #   probable_status: '...'
+  # }
+
   def self.find(code)
-    reason_code =
-      ParsedReasonCodes.fetch(code&.upcase, nil)
+    reason_code_data = PARSED_REASON_CODES.fetch(code&.upcase, nil)
 
-    return unless reason_code
+    return unless reason_code_data
 
-    reason_code_struct(reason_code)
+    reason_code(reason_code_data)
   end
 
-  # @returns collection [reason_code]
+  # @returns collection [SepaReasonCodes::Code]
 
   def self.all
-    ParsedReasonCodes.values.map do |reason_code|
-      reason_code_struct(reason_code)
+    PARSED_REASON_CODES.values.map do |reason_code_data|
+      reason_code(reason_code_data)
     end
   end
 
-  def self.reason_code_struct(reason_code)
-    ReasonCodeStruct.new(
-      reason_code.fetch('code'),
-      reason_code.fetch('iso_name'),
-      reason_code.fetch('description'),
-      reason_code.fetch('probable_status')
+  # @api private
+
+  def self.reason_code(reason_code_data)
+    Code.new(
+      code: reason_code_data.fetch('code'),
+      iso_name: reason_code_data.fetch('iso_name'),
+      description: reason_code_data.fetch('description'),
+      probable_status: reason_code_data.fetch('probable_status')
     )
   end
 
-  private_constant :ParsedReasonCodes
-  private_class_method :reason_code_struct
+  private_constant :PARSED_REASON_CODES
+  private_class_method :reason_code
 end

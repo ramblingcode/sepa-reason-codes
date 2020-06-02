@@ -8,10 +8,7 @@ Welcome to SepaReasonCodes!
 It is a minimal Ruby gem to work with SEPA Reason Codes.
 
 Reason Codes are used in exception handling in SEPA Direct Debit (SDD). These codes
-indicate reasons for why a transaction failure has happened. 
-
-You may use these codes if you are parsing bank statements or handling SEPA transactions through an API
-of some kind of 3rd Party Payment Gateway.
+indicate reasons for why a transaction failure has happened. You may use these codes if you are parsing bank statements or handling SEPA transactions through an API of some kind of 3rd Party Payment Gateway.
 
 We have created SepaReasonCodes so you may easily access and work with them.
 
@@ -35,7 +32,7 @@ Or install it yourself as:
 
 ## Usage
 
-No magic here! Just pass in the reason code and get back the struct with all required information.
+No magic here! Just pass in the reason code and get back the SepaReasonCodes::Code instance with all required information.
 
 ```ruby
 reason_code = SepaReasonCodes.find("AC01")
@@ -54,7 +51,18 @@ You can also retrieve all Reason Codes by doing:
 SepaReasonCodes.all
 ```
 
-which will return a collection of `ReasonCode` structs.
+which will return a collection of `SepaReasonCodes::Code`.
+
+Equality check has been overwritten and will be checked based on
+attribute values.
+
+```ruby
+reason_code = SepaReasonCodes::Code.find('AC01')
+other_same_reason_code_instance = SepaReasonCodes::Code.find('AC01')
+
+reason_code == other_same_reason_code_instance
+> true
+```
 
 ## Development
 
