@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    sepa_reason_codes (1.0.0)
+    sepa_reason_codes (1.0.1)
 
 GEM
   remote: https://rubygems.org/
