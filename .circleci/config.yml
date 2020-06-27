@@ -28,7 +28,7 @@ jobs:
           name: Store bundle cache
           paths:
             - ./vendor/bundle
-          key: hermes-dependencies
+          key: sepa-dependencies
 
       - run:
           name: Rubocop check
