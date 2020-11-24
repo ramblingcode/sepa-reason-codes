@@ -223,7 +223,7 @@ AM21:
   probable_status: declined
 ARDT:
   code: ARDT
-  iso_name: "-"
+  iso_name: Already returned transaction
   description: Transaction has already been returned
   probable_status: declined
 BE01:
@@ -694,7 +694,7 @@ FF10:
   probable_status: error
 FRAD:
   code: FRAD
-  iso_name: "-"
+  iso_name: Fraudulent Payment
   description: Payment is made with fraudulent intent.
   probable_status: declined
 ID01:
@@ -817,7 +817,7 @@ NOOR:
   probable_status: declined
 PART:
   code: PART
-  iso_name: "-"
+  iso_name: Parial Rejection
   description: Partial rejection of a bulk
   probable_status: declined
 PINL:
@@ -828,7 +828,7 @@ PINL:
   probable_status: declined
 PY01:
   code: PY01
-  iso_name: "-"
+  iso_name: Beneficiary or instructing bank not registered
   description: The transaction cannot be processed because the beneficiary and/or the instructing bank 
     is not registered with the EBA as a direct or indirect participant. (Initiator SEPA Clearer).
   probable_status: declined
@@ -903,7 +903,7 @@ RF01:
   probable_status: declined
 RJCT:
   code: RJCT
-  iso_name: "-"
+  iso_name: Complete Rejection of a bulk
   description: Complete rejection of a bulk
   probable_status: declined
 RR01:
@@ -1011,7 +1011,7 @@ TD03:
   probable_status: declined
 TECH:
   code: TECH
-  iso_name: "-"
+  iso_name: Erroneous credit transfer
   description: Technical problems resulting in erroneous credit transfer
   probable_status: declined
 TM01:
@@ -1036,7 +1036,7 @@ UPAY:
   probable_status: chargeback
 XD19:
   code: XD19
-  iso_name: "-"
+  iso_name: Iban check failed
   description: IBAN check according to ISO 13616 failed (e.g. (DebtorAccount or CreditorAccount are not correct.)
   probable_status: declined
 XD75:
@@ -1046,87 +1046,87 @@ XD75:
   probable_status: error
 XT13:
   code: XT13
-  iso_name: "-"
+  iso_name: Unsupported or missing field
   description: Transaction contains at least one unsupported field. 
     At least one mandatory field is not included in the transaction.
   probable_status: declined
 XT27:
   code: XT27
-  iso_name: "-"
+  iso_name: BIC is not available in SCL directory
   description: Transaction contains at least one element with a BIC that is not
     is available in the SCL directory.
   probable_status: declined
 XT33:
   code: XT33
-  iso_name: "-"
+  iso_name: Faulty format
   description: Content of at least one XML element does not have the required format.
     The faulty XML field is marked with the error code (Initiator SEPA Clearer).
   probable_status: declined
 XT43:
   code: XT43
-  iso_name: "-"
+  iso_name: Type of direct debit differs from the assignment of <Srvcld>
   description: Type of direct debit (CORE7B2B) differs from the assignment of the <Srvcld> 
     in the file header (Initiator SEPA Clearer).
   probable_status: declined
 XT53:
   code: XT53
-  iso_name: "-"
+  iso_name: Faulty Creditor Identifier
   description: Check of the Creditor Indentifier <CdtrSchmeld><Id> with regard to structure/check digit
     failed (initiator SEPA Clearer).
   probable_status: declined
 XT73:
   code: XT73
-  iso_name: "-"
+  iso_name: Invalid country code
   description: Both characters for the country code are not valid ISO or SEPA
     Country code (Initiator SEPA Clearer)
   probable_status: declined
 XT74:
   code: XT74
-  iso_name: "-"
+  iso_name: Faulty original transaction
   description: Faulty underlying original transaction (initiator other
     CSM). Further examination required
   probable_status: declined
 XT75:
   code: XT75
-  iso_name: "-"
+  iso_name: Incorrect status of original transaction
   description: Incorrect status of the underlying original transaction from
     the R message (initiator other CSM). No further actions necessary.
   probable_status: declined
 XT76:
   code: XT76
-  iso_name: "-"
+  iso_name: Invalid error code in Return/Refund
   description: Invalid error code in Return/Refund (Initiator SEPA Clearer)
   probable_status: declined
 XT77:
   code: XT77
-  iso_name: "-"
+  iso_name: <OrgnIIntrBkSttlmAmt> amount paid by other CSM not found or mismatched
   description: The originally commissioned amount <OrgnIIntrBkSttlmAmt> was paid by
     other CSM not found or does not match the amount of the original transaction about
   probable_status: declined
 XT78:
   code: XT78
-  iso_name: "-"
+  iso_name: Faulty or mismatching amount in either <OrgnlIntrBkSttlmAmt>, <CompstnAmt>, <ChrgsInf><Amt>
   description: 'pasc.004.001.01: The amount in <OrgnlIntrBkSttlmAmt> + <CompstnAmt>
     + <ChrgsInf><Amt> must result in the amount in <RtrdIntrBkSttlmAmt> if <CompstnAmt>
     and/or <ChrgsInf><Amt> available (initiator SEPA Clearer).'
   probable_status: declined
 XT79:
   code: XT79
-  iso_name: "-"
+  iso_name: Debtor is not allowed to receive direct debit
   description: The <DbtrAgt> is not allowed to receive direct debits. An
     indirect participants must be allowed to accept direct debits from the clearing system
     (initiator other CSM).
   probable_status: declined
 XT80:
   code: XT80
-  iso_name: "-"
+  iso_name: Creditor is not allowed to send direct debits
   description: The <CdtrAgt> is not allowed to send direct debits. An indirect
     Participant must be allowed to send direct debits to the clearing system
     (initiator other CSM).
   probable_status: declined
 XT81:
   code: XT81
-  iso_name: "-"
+  iso_name: SCT field is not permitted
   description: SCT XML field not permitted in CT service
   probable_status: declined
 XT85:
@@ -1136,7 +1136,7 @@ XT85:
   probable_status: declined
 XT87:
   code: XT87
-  iso_name: "-"
+  iso_name: Invalid SDD R-Msg
   description: SDD R-Msg not following same DP route/ sending DP not identical to
     Instructing / Instructed Agent of the original Transaction
   probable_status: declined
@@ -1147,7 +1147,7 @@ XT90:
   probable_status: declined
 XT99:
   code: XT99
-  iso_name: "-"
+  iso_name: Rejection by SEPA clearer
   description: Rejection of the bank transfer or direct debit or card collection from
     SEPA Clearer for other reasons.
   probable_status: declined
